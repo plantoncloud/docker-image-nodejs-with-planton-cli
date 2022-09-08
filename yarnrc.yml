@@ -4,4 +4,4 @@ npmScopes:
   "buf":
     npmAlwaysAuth: true
     npmRegistryServer: https://npm.buf.build
-    npmAuthToken: "${BUF_TOKEN}"
+    npmAuthToken: "${BUF_TOKEN:-dummy-buf-token}"
