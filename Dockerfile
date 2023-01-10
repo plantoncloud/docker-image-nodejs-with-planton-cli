@@ -11,5 +11,6 @@ RUN wget https://storage.googleapis.com/afs-planton-pos-uc1-ext-file-repo/tool/c
     corepack enable && \
     corepack prepare yarn@$YARN_VERSION --activate && \
 #    https://stackoverflow.com/a/56175820/3427243
-    yarn policies set-version $YARN_VERSION
+    yarn policies set-version $YARN_VERSION && \
+    apk add bash
 COPY yarnrc.yml /root/.yarnrc.yml
